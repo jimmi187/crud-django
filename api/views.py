@@ -12,8 +12,8 @@ from django.shortcuts import get_object_or_404
 @api_view(['GET'])
 def api_overview(request):
     api_urls = {
-        'all-emp' : 'api/employees',
-        'add-emp' : 'api/employee/create/',
+        'all-emp' : 'api/employee',
+        'add-emp' : 'api/employee/create',
         'get-by-id' : 'api/employee/<pk>',
         'update-emp' : 'api/employee/<pk>/update',
         'delete-emp' : 'api/employee/<pk>/delete'
